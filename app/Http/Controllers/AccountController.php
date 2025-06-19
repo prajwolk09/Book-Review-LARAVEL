@@ -20,7 +20,7 @@ class AccountController extends Controller
     public function processRegister(Request $request){
         $validator = Validator::make($request->all(),[
             'name'=>'required|min:3',
-            'email'=>'required|email',
+            'email'=>'required|email|unique:users',
             'password'=>'required|confirmed|min:8',
             'password_confirmation' => 'required'
         ]);
