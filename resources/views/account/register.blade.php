@@ -25,7 +25,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="email" value="{{ old('email') }}" class="form-control animate-input @error('email') is-invalid @enderror" name="email" id="email" placeholder="name@example.com" required>
+                                            <input type="text" value="{{ old('email') }}" class="form-control animate-input @error('email') is-invalid @enderror" name="email" id="email" placeholder="name@example.com" required>
                                             <label for="email">Email Address</label>
                                             @error('email')
                                             <p class="invalid-feedback">
